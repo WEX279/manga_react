@@ -1,0 +1,45 @@
+*
+*::before
+*::after {
+    box-sizing: border-box;
+}
+
+.navBar{
+  display: flex;
+  margin-left: 3em;
+  margin-right: 3em;
+  gap: 3em;
+  align-items: center;
+
+}
+.searcher{
+  border-radius: 16px;
+}
+
+.searcherBtn{
+  border-radius: 16px;
+}
+
+.signCard{
+  align-self: center ;
+  align-content: center ;
+  width: 600px;
+  height: 600px;;
+  border-radius: 64px;
+  border: solid;
+}
+
+.signUp{
+  display: flex;
+  justify-content: center;
+  margin: 3em;
+}
+
+.signForm{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  margin: 0px;
+  gap: 1em;
+  max-width: 450px;
+}

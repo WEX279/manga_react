@@ -1,8 +1,8 @@
 function About(){
     return(
-    <div className="searcher">
-        <input placeholder="Buscar"></input>
-        <button>🔎</button>
+    <div>
+        <input placeholder="Buscar" className="searcher"></input>
+        <button className="searcherBtn" >🔎</button>
     </div>
     )
 }

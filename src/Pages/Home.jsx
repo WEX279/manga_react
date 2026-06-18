@@ -4,10 +4,12 @@ import { Logo } from "../Components/Logo";
 
 function Home(){
     return(
-        <div className="navBar">
-            <Logo/>
-            <Layout/>
-            <About/>
+        <div>
+            <div className="navBar">
+                <Logo/>
+                <Layout/>
+                <About/>
+            </div>
             <hr/>
         </div>
     )
