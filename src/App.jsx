@@ -1,23 +1,19 @@
 import './App.css'
-import { Routes, Route, Link } from 'react-router-dom'
-import { Home } from './Pages/Home'; 
-import { About } from './Pages/About';
+import { Routes, Route,  } from 'react-router-dom'
+import { Home } from './Pages/Home';
 import { Characters } from './Pages/Characters';
+import { CharacterDetail } from './Pages/CharacterDetail';
 
 function App() {
 
   return (
-    <div>
-      <nav>
-        <Link to="/Home">Inicio</Link> | <Link to="/Characters">Personajes</Link> |  <Link to="/About">About us</Link> 
-      </nav>
-
       <Routes>
-        <Route path='/Home' element={<Home/>}/>
-        <Route path='/Characters' element={<Characters/>}/>
-        <Route path='/About' element={<About/>}/>
+        <Route path='/' element={<Home/>}>
+          <Route path='/characters' element={<Characters/>}/>
+          <Route path='/characters' element={<Characters/>}/>
+          <Route path='/characters/:id' element={<CharacterDetail/>}/>
+        </Route>
       </Routes>
-    </div>
   )
 }
 

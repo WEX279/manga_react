@@ -1,0 +1,18 @@
+import { NavLink, Outlet } from "react-router-dom"
+
+function Layout() {
+    return(
+        <div>
+            <nav>
+                <NavLink to="/Home">Inicio</NavLink> | <NavLink to="/Characters">Personajes</NavLink> |  <NavLink to="/About">About us</NavLink> 
+            </nav>
+            <main>
+                <Outlet />
+            </main>
+        </div>
+    )
+}
+
+export {
+    Layout
+}

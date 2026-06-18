@@ -1,15 +1,15 @@
+import { About } from "../Components/About";
+import { Layout } from "../Components/Layout";
+import { Logo } from "../Components/Logo";
+
 function Home(){
     return(
-    <div>
-        <section className="navBar">
-        <h1 >API MANGA </h1>
-            <p>(nombre provisional)</p>
-
-            <h2>La nueva forma de organizar y localizar manga</h2>
-            
-        </section>
-
-    </div>    
+        <div className="navBar">
+            <Logo/>
+            <Layout/>
+            <About/>
+            <hr/>
+        </div>
     )
 }
 
