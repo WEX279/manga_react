@@ -23,6 +23,7 @@
 .signCard{
   align-self: center ;
   align-content: center ;
+  margin: auto;
   width: 600px;
   height: 600px;;
   border-radius: 64px;
