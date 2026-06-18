@@ -1,4 +1,10 @@
+import { Navigate, useNavigate } from "react-router-dom"
+
 function Signup() {
+    const navigate = useNavigate()
+    const log = ()=>{
+        navigate('/login')
+    }
     return(
         <div className="signCard">
             <div className="signUp">
@@ -13,6 +19,7 @@ function Signup() {
             </div>
             <br/>
             <p>Or log in if you already have an account!</p>
+            <button onClick={log}>Log in</button>
 
         </div>
     )

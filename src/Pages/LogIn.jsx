@@ -1,4 +1,10 @@
+import { Navigate, useNavigate } from "react-router-dom"
+
 function Login() {
+    const navigate = useNavigate()
+    const sign= ()=>{
+        navigate('/signup')
+    }
     return(
         <div className="signCard">
             <div className="signUp">
@@ -12,6 +18,7 @@ function Login() {
             </div>
             <br/>
             <p>Or sign up if you don`t have an account!</p>
+            <button onClick={sign} >Sign up</button>
 
         </div>
     )
