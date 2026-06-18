@@ -10,7 +10,7 @@
   margin-right: 3em;
   gap: 3em;
   align-items: center;
-
+  text-decoration: none;
 }
 .searcher{
   border-radius: 16px;
@@ -18,6 +18,18 @@
 
 .searcherBtn{
   border-radius: 16px;
+    cursor: pointer;
+}
+
+.logSign{
+  border-radius: 16px;
+  min-width: 5em;
+  cursor: pointer;
+  transition: 0.5sec ease;
+}
+
+.logSign:hover{
+  transform: scale(0.9);
 }
 
 .signCard{

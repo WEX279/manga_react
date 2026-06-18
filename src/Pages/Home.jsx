@@ -1,6 +1,7 @@
 import { About } from "../Components/About";
 import { Layout } from "../Components/Layout";
 import { Logo } from "../Components/Logo";
+import { LogSign } from "../Components/LogSIgn";
 
 function Home(){
     return(
@@ -9,6 +10,7 @@ function Home(){
                 <Logo/>
                 <Layout/>
                 <About/>
+                <LogSign/>
             </div>
             <hr/>
         </div>
