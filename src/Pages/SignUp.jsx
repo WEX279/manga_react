@@ -1,18 +1,25 @@
 import { useNavigate } from "react-router-dom"
-import { LogSign } from "../Components/LogSign"
+import { useRef, useEffect } from "react";
 
 function Signup() {
     const navigate = useNavigate()
     const log = ()=>{
         navigate('/login')
     }
+    const inputRef = useRef(null)
+
+    useEffect(()=>{
+        inputRef.current.focus()
+
+    },[])
+
     return(
         <div className="signCard">
             <div className="signUp">
                 <h1>Sign Up</h1>
             </div>
             <div className="signForm">
-                <input placeholder="Email"></input>
+                <input placeholder="Email" ref={inputRef}></input>
                 <input placeholder="Password"></input>
                 <input placeholder="The same password"></input>
                 <br/>
@@ -21,7 +28,6 @@ function Signup() {
             <br/>
             <p>Or log in if you already have an account!</p>
             <button onClick={log}>Log in</button>
-            {/* <LogSign /> */}
         </div>
     )
 }

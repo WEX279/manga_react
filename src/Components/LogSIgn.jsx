@@ -1,8 +1,7 @@
-import { useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 function LogSign(){
-    const inputRef = useRef(null)
+
     const navigate = useNavigate()
     const sign= () =>{
         navigate('/signup')
@@ -12,11 +11,6 @@ function LogSign(){
         navigate('/login')
     }
 
-
-    useEffect(()=>{
-        inputRef.current.focus()
-        
-    },[])
 
     return(
         <div>

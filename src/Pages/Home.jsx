@@ -2,6 +2,7 @@ import { About } from "../Components/About";
 import { Layout } from "../Components/Layout";
 import { Logo } from "../Components/Logo";
 import { LogSign } from "../Components/LogSign";
+import { Header } from "../context/Header";
 
 function Home(){
     return(
@@ -10,6 +11,7 @@ function Home(){
                 <Logo/>
                 <Layout/>
                 <About/>
+                <Header/>
                 <LogSign/>
             </div>
             <hr/>
