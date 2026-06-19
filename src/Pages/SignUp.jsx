@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom"
+import { SearchFile } from "../Components/Counter"
 
 function Signup() {
     const navigate = useNavigate()
@@ -20,7 +21,7 @@ function Signup() {
             <br/>
             <p>Or log in if you already have an account!</p>
             <button onClick={log}>Log in</button>
-
+            <SearchFile/>
         </div>
     )
 }
