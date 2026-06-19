@@ -8,15 +8,16 @@ function Manga() {
 	const [error, setError] = useState(null)
 	const [page, setPage] = useState(1)
 
+
 	useEffect(() => {
 		async function load() {
 			try {
 				setIsLoading(true)
 				setError(null)
-				const response = await fetch(`http://localhost3000/api/manga?page=${page}`)
+				const response = await fetch(`http://localhost:3000/api/manga`)
 				if (!response.ok) throw new Error("Couldn`t load mangas!")
 				const data = await response.json()
-				setMangas(data.results)
+				setMangas(data)
 			} catch (error) {
 				setError(error.message)
 			} finally {

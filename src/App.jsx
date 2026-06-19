@@ -12,12 +12,12 @@ function App() {
   return (
       <Routes>
         <Route path='/' element={<Home/>}>
-          <Route path='/characters' element={<Characters/>}/>
-          <Route path='/characters/:id' element={<CharacterDetail/>}/>
           <Route path='/manga' element={<Manga/>}/>
           <Route path='/manga/:id' element={<Manga/>}/>
         </Route>
         <Route path='/signup' element={<Signup/>} />
+          <Route path='/characters' element={<Characters/>}/>
+          <Route path='/characters/:id' element={<CharacterDetail/>}/>
         <Route path='/login' element={<Login/>} />
       </Routes>
   )
