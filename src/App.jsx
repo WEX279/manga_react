@@ -13,7 +13,7 @@ function App() {
   const [theme, setTheme] = useState('light')
 
   return (
-      <ThemeContext value = {{theme, setTheme}}>
+      <ThemeContext.Provider value = {{theme, setTheme}}>
         <Routes>
           <Route path='/' element={<Home/>}>
             <Route path='/manga' element={<Manga/>}/>
@@ -24,7 +24,7 @@ function App() {
           <Route path='/signup' element={<Signup/>}/>
           <Route path='/login' element={<Login/>} />
         </Routes>
-      </ThemeContext>
+      </ThemeContext.Provider>
   )
 }
 
