@@ -1,7 +1,7 @@
 import { About } from "../Components/About";
 import { Layout } from "../Components/Layout";
 import { Logo } from "../Components/Logo";
-import { LogSign } from "../Components/LogSIgn";
+import { LogSign } from "../Components/LogSign";
 
 function Home(){
     return(
