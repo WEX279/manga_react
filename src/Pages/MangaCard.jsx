@@ -27,12 +27,14 @@ function MangaCard(){
     if(error)return<p>Something happened fetching your mangas</p>
 
     return(
-        <div>
-            <img src={manga?.image} alt={manga?.name}/>
-            <p>{manga?.name}</p>
-            <p>{manga?.author}</p>
-            <p>{manga?.release}</p>
-            <p>{manga?.genre}</p>
+        <div className="mCard">
+            <img src={manga?.image} alt={manga?.name} className="mImg"/>
+            <div className="mTxt">
+                <h2 className="mName">{manga?.name}</h2>
+                <p className="mAuth"><strong>Author: </strong>{manga?.author}</p>
+                <p className="mRelease"><strong>First published: </strong>{manga?.release}</p>
+                <p className="mGenre"><strong>Genre & topics: </strong>{manga?.genre}</p>
+            </div>
         </div>
     )
 }

@@ -60,3 +60,15 @@
 /* .theme{
   background-color: #ffffff;
 } */
+
+
+.mCard{
+  display: flex;
+  align-items: center;
+}
+
+.mTxt{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
