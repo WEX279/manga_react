@@ -4,7 +4,7 @@ function Layout() {
     return(
         <div>
             <nav>
-                <NavLink to="/">Inicio</NavLink> | <NavLink to="/Characters">Personajes</NavLink> | <NavLink to="/About">About us</NavLink> | <NavLink to="/manga">Manga</NavLink>  
+                <NavLink to="/">Inicio</NavLink> | <NavLink to="/Characters">Personajes</NavLink> | <NavLink to="/About">About us</NavLink> | <NavLink to="/manga">Catalog</NavLink>  
             </nav>
             <main>
                 <Outlet />
