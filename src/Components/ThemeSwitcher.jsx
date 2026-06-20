@@ -5,7 +5,7 @@ function SwitchTheme(){
     const {theme, setTheme} = useContext(ThemeContext)
 
     return(
-        <button onClick={() => setTheme(theme === "light" ? "dark": "light")}>
+        <button onClick={() => setTheme(theme === "☀️" ? "🌙": "☀️")}>
             Actual theme: {theme}
         </button>
     )

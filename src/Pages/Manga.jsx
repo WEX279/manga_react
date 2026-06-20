@@ -31,7 +31,7 @@ function Manga() {
 	return (
 		mangas?.map((manga) => (
 			<li key={manga.id}>
-				<Link to={`/manga/${manga.id}`}>{manga.name}</Link>
+				<Link to={`/manga/${manga._id}`}>{manga.name}</Link>
 			</li>
 		))
 	)

@@ -22,6 +22,7 @@ function CharacterDetail() {
         }
         load()
     }, [id])
+
     if(isLoading) return <p>Loading...</p>
     if(error) return <p>Error</p>
 
@@ -34,6 +35,7 @@ function CharacterDetail() {
         </div>
     )
 }
+
 export{
     CharacterDetail
 }

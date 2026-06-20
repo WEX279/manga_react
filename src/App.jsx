@@ -8,6 +8,7 @@ import { Manga } from './Pages/Manga';
 import { Signup } from './Pages/SignUp';
 import { Login } from './Pages/LogIn';
 import { ThemeContext } from './context/ThemeContext';
+import { MangaCard } from './Pages/MangaCard';
 
 function App() {
   const [theme, setTheme] = useState('light')
@@ -17,7 +18,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}>
             <Route path='/manga' element={<Manga/>}/>
-            <Route path='/manga/:id' element={<Manga/>}/>
+            <Route path='/manga/:_id' element={<MangaCard/>}/>
             <Route path='/characters' element={<Characters/>}/>
             <Route path='/characters/:id' element={<CharacterDetail/>}/>
           </Route>
