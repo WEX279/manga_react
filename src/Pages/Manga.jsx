@@ -30,9 +30,12 @@ function Manga() {
 
 	return (
 		mangas?.map((manga) => (
-			<li key={manga.id}>
-				<Link to={`/manga/${manga._id}`}>{manga.name}</Link>
-			</li>
+		<div key={manga.id}>
+			<Link to={`/manga/${manga._id}`}><img src={manga?.image} alt={manga?.name}/></Link>           
+            <h2>{manga?.name}</h2>
+
+			<hr/>
+        </div>
 		))
 	)
 }
