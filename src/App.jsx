@@ -19,16 +19,28 @@ function App() {
         <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='Home' />
-            <Route path='/manga' element={<div>
-            <Home/>
-            <Manga/>
-        </div>}/>
-            <Route path='/manga/:_id' element={<div>
-            <Home/>
-            <MangaCard/>
-        </div>}/>
-            <Route path='/characters' element={<Characters/>}/>
-            <Route path='/characters/:id' element={<CharacterDetail/>}/>
+            <Route path='/manga' element={
+              <div>
+                <Home/>
+                <div className='catalog'>
+                  <Manga/>
+                </div>
+              </div>
+            }/>
+            <Route path='/manga/:_id' element={
+              <div>
+                <Home/>
+                <MangaCard/>
+              </div>
+            }/>
+            <Route path='/characters' element={<div>
+                <Home/>
+                <Characters/>
+              </div>}/>
+            <Route path='/characters/:id' element={<div>
+                <Home/>
+                <CharacterDetail/>
+              </div>}/>
           <Route path='/signup' element={<Signup/>}/>
           <Route path='/login' element={<Login/>} />
         </Routes>

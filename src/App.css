@@ -61,6 +61,30 @@
   background-color: #ffffff;
 } */
 
+.catalog{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  gap: 2em
+}
+
+.cBox{
+  display: flex;
+  flex-direction: column;
+}
+
+.cImg, .cLink{
+  display: flex;
+  justify-content: center;
+  width: 200px;
+}
+
+.cName{
+  display: flex;
+  justify-content: center;
+  width: 200px
+}
+
 
 .mCard{
   display: flex;
