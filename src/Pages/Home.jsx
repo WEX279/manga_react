@@ -1,6 +1,6 @@
-import { About } from "../Components/About";
+import { About } from "../Components/Molecules/Searcher";
 import { Layout } from "../Components/Layout";
-import { Logo } from "../Components/Logo";
+import { Logo } from "../Components/Atoms/Logo";
 import { LogSign } from "../Components/LogSign";
 
 function Home(){

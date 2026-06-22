@@ -1,4 +1,4 @@
-function About(){
+function Searcher(){
     return(
     <div>
         <input placeholder="Buscar" className="searcher"></input>
@@ -8,5 +8,5 @@ function About(){
 }
 
 export{
-    About
+    Searcher
 }

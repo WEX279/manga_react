@@ -9,6 +9,7 @@ import { MangaCard } from './Pages/MangaCard';
 import { Signup } from './Pages/SignUp';
 import { Login } from './Pages/LogIn';
 import { ThemeContext } from './context/ThemeContext';
+import { RegisterForm } from './Components/RegisterForm';
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
       <ThemeContext.Provider value = {{theme, setTheme}}>
         <Routes>
             <Route path='/' element={<Home/>}/>
-            <Route path='Home' />
+            <Route path='Home'/>
             <Route path='/manga' element={
               <div>
                 <Home/>
@@ -43,6 +44,8 @@ function App() {
               </div>}/>
           <Route path='/signup' element={<Signup/>}/>
           <Route path='/login' element={<Login/>} />
+          <Route path='/test' element={<RegisterForm/>} />
+
         </Routes>
       </ThemeContext.Provider>
   )
