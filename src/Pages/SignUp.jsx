@@ -1,8 +1,6 @@
 import { useNavigate } from "react-router-dom"
-import { useRef, useEffect, useState } from "react";
-
-
-
+import { useRef, useEffect,  } from "react";
+import { Input } from "../Components/Atoms/Input";
 
 function Signup() {
     const navigate = useNavigate()
@@ -22,9 +20,9 @@ function Signup() {
                 <h1>Sign Up</h1>
             </div>
             <div className="signForm">
-                <input placeholder="Email" ref={inputRef}></input>
-                <input placeholder="Password"></input>
-                <input placeholder="The same password"></input>
+                <Input placeholder="Email" ref={inputRef}/>
+                <Input placeholder="Password"/>
+                <Input placeholder="The same password"/>
                 <br/>
                 <button>Send</button>
             </div>

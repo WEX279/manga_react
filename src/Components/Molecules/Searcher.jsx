@@ -1,8 +1,11 @@
+import { Input } from "../Atoms/Input"
+import { SearchBtn } from "../Atoms/SearchBtn"
+
 function Searcher(){
     return(
     <div>
-        <input placeholder="Buscar" className="searcher"></input>
-        <button className="searcherBtn" >🔎</button>
+        <Input/>
+        <SearchBtn/>
     </div>
     )
 }
