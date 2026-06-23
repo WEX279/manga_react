@@ -9,7 +9,7 @@ function SignUp(){
     }
 
     return(
-            <button onClick={signup} className="logSign"> Sign up</button>
+            <button onClick={signup} className="rounded-2xl  bg-gray-400 hover:bg-gray-500" type="submit" > Sign up</button>
     )
 }
 

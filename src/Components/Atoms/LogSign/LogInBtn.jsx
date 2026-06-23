@@ -9,7 +9,7 @@ function LogIn(){
     }
     
     return(
-        <button onClick={login} className="logSign" >Log in </button>
+        <button onClick={login} className="rounded-2xl bg-gray-400" type="submit" >Log in </button>
     )
 }
 

@@ -3,7 +3,7 @@ import { SearchBtn } from "../Atoms/SearchBtn"
 
 function Searcher(){
     return(
-    <div>
+    <div className="rounded-2xl border ">
         <Input/>
         <SearchBtn/>
     </div>

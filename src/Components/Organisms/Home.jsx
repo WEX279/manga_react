@@ -8,21 +8,21 @@ import { Outlet } from "react-router-dom";
 
 function Home(){
     return(
-        <div>
-            <div className="navBar">
+        <div className='bg-black text-white'>
+            <div className="flex justify-around items-center ">
                 <Logo/>
                 <Layout/>
-                <Searcher/>
+                <Searcher />
                 <SwitchTheme/>
-                <div className="logsign">
+                <div className="flex gap-1">
                     <LogIn/>
                     <SignUp/>
                 </div>
             </div>
             <hr/>
-                <main className='catalog'>
-                    <Outlet />
-                </main>
+            <main>
+            <Outlet />
+            </main>
         </div>
     )
 }

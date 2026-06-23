@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { SendBtn } from "../Components/Atoms/SendBtn";
+const API = import.meta.env.VITE_API_URL
 
 function RegisterForm() {
     const [data, setData] = useState({ name: "", email: "", password: ""})
@@ -24,6 +25,10 @@ function RegisterForm() {
         
         return errors
         
+    }
+
+    async function register(values) {
+        const res= await fetch(`${API}/users/api`)
     }
     
     function handleSubmit(e) {

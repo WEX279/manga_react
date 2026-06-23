@@ -16,11 +16,13 @@ function App() {
   return (
       <ThemeContext.Provider value = {{theme, setTheme}}>
         <Routes>
+
             <Route path='/' element={<Home/>}>
-              <Route path='Home'/>
+              <Route path='Home' />
               <Route path='/manga' element={<Manga/>}/>
               <Route path='/manga/:_id' element={<MangaCard/>}/>
             </Route>  
+
           <Route path='/signup' element={<Signup/>}/>
           <Route path='/login' element={<Login/>} />
           <Route path='/test' element={<RegisterForm/>} />
