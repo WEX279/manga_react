@@ -10,9 +10,9 @@ function Form({
 
 if(LogSign==="SignUp"){
     return(
-        <div className="flex flex-col rounded border justify-self-center gap-1 w-3xl h-xl">
+        <div className="flex flex-col self-center justify-center gap-[1em]">
             <div className="flex justify-center">
-                <h1>SignUp</h1>
+                <h1  className="font-bold text-3xl">SignUp</h1>
             </div>
             <div className="flex flex-col justify-center gap-1">
                 <Input Focus={"Here"}placeholder="Email" />
@@ -26,20 +26,21 @@ if(LogSign==="SignUp"){
             <LogIn />
         </div>
     )} else if(LogSign==="LogIn"){
-        return(<div className="signCard" className="flex flex-col border justify-self-center gap-1 max-w-28rem">
+        return(
+        <div className="flex flex-col self-center justify-center gap-[1em]">
             <div className="flex justify-center">
-                <h1>Log in</h1>
+                <h1 className="font-bold text-3xl">Log in</h1>
             </div>
             <div className="flex flex-col justify-center gap-1">
-                <Input Focus={"Here"}placeholder="Email"/>
+                <Input Focus={"Here"} placeholder="Email"/>
                 <Input placeholder="Password"/>
                 <br/>
                 <SendBtn/>
             </div>
-            <br/>
             <p>Or sign up if you don`t have an account!</p>
             <SignUp />
-        </div>)
+        </div>
+        )
     }}
 
 export {

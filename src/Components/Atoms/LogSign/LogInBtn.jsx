@@ -9,7 +9,9 @@ function LogIn(){
     }
     
     return(
-        <button onClick={login} className="rounded-2xl bg-gray-400" type="submit" >Log in </button>
+        <div className="flex justify-center">
+        <button onClick={login} className="rounded-2xl bg-gray-400 hover:bg-gray-500 w-16" type="submit" >Log in </button>
+        </div>
     )
 }
 
