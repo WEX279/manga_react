@@ -2,7 +2,7 @@ import './App.css'
 import { useState } from 'react';
 import { Routes, Route,  } from 'react-router-dom'
 import { Home } from './Components/Organisms/Home';
-import { Manga } from './Pages/Manga';
+import { Catalog } from './Pages/catalog';
 import { MangaCard } from './Pages/MangaCard';
 import { Signup } from './Pages/SignUp';
 import { Login } from './Pages/LogIn';
@@ -19,7 +19,7 @@ function App() {
 
             <Route path='/' element={<Home/>}>
               <Route path='Home' />
-              <Route path='/manga' element={<Manga/>}/>
+              <Route path='/manga' element={<Catalog/>}/>
               <Route path='/manga/:_id' element={<MangaCard/>}/>
             </Route>  
 

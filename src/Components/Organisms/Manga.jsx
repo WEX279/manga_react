@@ -30,9 +30,11 @@ function Manga() {
 
 	return (
 		mangas?.map((manga) => (
-		<div key={manga.id} className="cBox">
-				<Link to={`/manga/${manga._id}`} className="cLink"><img src={manga?.image} alt={manga?.name} className="cImg"/></Link>           
-            <h2 className="cName">{manga?.name}</h2>
+		<div key={manga.id} >
+			<section className="flex flex-col  w-50">
+				<Link to={`/manga/${manga._id}`} className="flex justify-center w-50"><img src={manga?.image} alt={manga?.name} className="flex justify-center w-50"/></Link>           
+            <h2 className="flex justify-center w-50">{manga?.name}</h2>
+			</section>
         </div>
 		))
 	)

@@ -20,9 +20,9 @@ function Home(){
                 </div>
             </div>
             <hr/>
-            <main>
-            <Outlet />
-            </main>
+                <main>
+                <Outlet />
+                </main>
         </div>
     )
 }
