@@ -9,7 +9,7 @@ import { Outlet } from "react-router-dom";
 function Home(){
     return(
         <div className='bg-black text-white'>
-            <div className="flex justify-around items-center ">
+            <div className="flex justify-around items-center pb-[1em] pt-[1em]">
                 <Logo/>
                 <Layout/>
                 <Searcher />

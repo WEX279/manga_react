@@ -28,12 +28,12 @@ function MangaCard(){
 
     return(
         <div className="flex items-center justify-center">
-            <img src={manga?.image} alt={manga?.name} className="mImg"/>
-            <div className="flex flex-col justify-center m-[2em] gap-[1em]">
+            <img src={manga?.image} alt={manga?.name} />
+            <div className="flex flex-col justify-center p-[2em] gap-[1em]">
                 <h2 className="font-bold text-3xl">{manga?.name}</h2>
-                <p className="mAuth"><strong>Author: </strong> {manga?.author}</p>
-                <p className="mRelease"><strong>First published: </strong>{manga?.release}</p>
-                <p className="mGenre"><strong>Genre & topics: </strong>{manga?.genre}</p>
+                <p ><strong>Author: </strong> {manga?.author}</p>
+                <p ><strong>First published: </strong>{manga?.release}</p>
+                <p ><strong>Genre & topics: </strong>{manga?.genre}</p>
             </div>
         </div>
     )

@@ -16,7 +16,6 @@ function App() {
   return (
       <ThemeContext.Provider value = {{theme, setTheme}}>
         <Routes>
-
             <Route path='/' element={<Home/>}>
               <Route path='Home' />
               <Route path='/manga' element={<Catalog/>}/>

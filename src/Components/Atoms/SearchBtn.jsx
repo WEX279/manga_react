@@ -1,5 +1,5 @@
 function SearchBtn() {
-    return <button className="searcherBtn" >🔎</button>
+    return <button>🔎</button>
 }
 
 export{

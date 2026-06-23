@@ -2,7 +2,7 @@ import { Form } from "../Components/Atoms/LogSign/Form"
 
 function Login(){
     return (
-        <div className="flex flex-col rounded-2xl border justify-center content-center justify-self-center gap-1  w-100 h-100 m-[3em]">
+        <div className="flex flex-col rounded-2xl border justify-center content-center justify-self-center gap-1  w-100 h-100 p-[3em]">
             <Form LogSign={"LogIn"}/>
         </div>
     )
