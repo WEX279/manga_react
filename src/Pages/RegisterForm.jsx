@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { SendBtn } from "../Components/Atoms/SendBtn";
 
 function RegisterForm() {
     const [data, setData] = useState({ name: "", email: "", password: ""})
@@ -35,17 +36,22 @@ function RegisterForm() {
     }
 
     return(
-        <div>
-            <form onSubmit={handleSubmit}>
-                <input type="text" placeholder="Name" name="name" value={data.name} onChange={handleChange}></input>
+        <div className="flex-col gap-1 ">
+            <form onSubmit={handleSubmit} className="mx-auto flex max-w-md flex-col gap-4 p-6">
+                
+                <h2 className="text-2xl font-bold">Nombre:</h2>
+                <input type="text" placeholder="Name" name="name" value={data.name} onChange={handleChange} className="rounded-full border border-gray-300 px-3 py-1 focus:border-blue-500 focus:outline-none"/>
                 {errors.name && <span>{errors.name}</span>}
 
-                <input type="text" placeholder="email" name="email" value={data.email} onChange={handleChange}></input>
+                <h2 className="text-2xl font-bold">Correo:</h2>
+                <input type="text" placeholder="Email" name="email" value={data.email} onChange={handleChange} className="rounded-full border border-gray-300 px-3 py-1 focus:border-blue-500 focus:outline-none"/>
                 {errors.email && <span>{errors.email}</span>}
 
-                <input type="text" placeholder="password" name="password" value={data.password} onChange={handleChange}></input>
+                <h2 className="text-2xl font-bold">Contraseña:</h2>
+                <input type="text" placeholder="Password" name="password" value={data.password} onChange={handleChange} className="rounded-full border border-gray-300 px-3 py-1 focus:border-blue-500 focus:outline-none"/>
                 {errors.password && <span>{errors.password}</span>}
-
+                
+                <SendBtn />
             </form>
         </div>
     )

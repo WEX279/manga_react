@@ -1,4 +1,4 @@
-import { Input } from "../Atoms/Input"
+import { Input } from "../Atoms/SearchInput"
 import { SearchBtn } from "../Atoms/SearchBtn"
 
 function Searcher(){

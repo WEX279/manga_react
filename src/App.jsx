@@ -7,7 +7,7 @@ import { MangaCard } from './Pages/MangaCard';
 import { Signup } from './Pages/SignUp';
 import { Login } from './Pages/LogIn';
 import { ThemeContext } from './context/ThemeContext';
-import { RegisterForm } from './Components/RegisterForm';
+import { RegisterForm } from './Pages/RegisterForm';
 
 
 function App() {

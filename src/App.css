@@ -6,6 +6,7 @@
 
 .navBar{
   display: flex;
+  justify-content: space-around;
   margin-left: 3em;
   margin-right: 3em;
   gap: 3em;
@@ -18,7 +19,7 @@
 
 .searcherBtn{
   border-radius: 16px;
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .logSign{
@@ -57,10 +58,9 @@
   max-width: 450px;
 }
 
-/* .theme{
+.theme{
   background-color: #ffffff;
-} */
-
+} 
 .catalog{
   display: flex;
   flex-flow: wrap;
@@ -97,4 +97,4 @@
   display: flex;
   flex-direction: column;
   gap: 2em;
-}
+} 
