@@ -3,8 +3,8 @@ import { NavLink,  } from "react-router-dom"
 function Layout() {
     return(
         <div>
-            <nav>
-                <NavLink to="/">Inicio</NavLink> | <NavLink to="/manga">Catalog</NavLink> | <NavLink to="/About">About us</NavLink> 
+            <nav className="text-white ">
+                <NavLink className="hover:text-secondary duration-300" to="/">Inicio</NavLink> | <NavLink className="hover:text-secondary duration-300" to="/manga">Catalog</NavLink> | <NavLink className="hover:text-secondary duration-300" to="/about">About us</NavLink> 
             </nav>
         </div>
     )

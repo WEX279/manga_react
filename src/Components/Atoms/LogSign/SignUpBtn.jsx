@@ -10,7 +10,7 @@ function SignUp(){
 
     return(
         <div className="flex justify-center" >
-            <button onClick={signup} className="rounded-2xl  bg-gray-400 hover:bg-gray-500 w-16"  type="submit" >Sign up</button>
+            <button onClick={signup} className="rounded-2xl text-black bg-secondary hover:bg-[#4563E8] w-16 duration-300"  type="submit" >Sign up</button>
         </div>
     )
 }

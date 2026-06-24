@@ -17,7 +17,7 @@ function App() {
       <ThemeContext.Provider value = {{theme, setTheme}}>
         <Routes>
             <Route path='/' element={<Home/>}>
-              <Route path='Home' />
+              <Route path='/about' />
               <Route path='/manga' element={<Catalog/>}/>
               <Route path='/manga/:_id' element={<MangaCard/>}/>
             </Route>  

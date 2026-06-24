@@ -10,7 +10,7 @@ function LogIn(){
     
     return(
         <div className="flex justify-center">
-        <button onClick={login} className="rounded-2xl bg-gray-400 hover:bg-gray-500 w-16" type="submit" >Log in </button>
+        <button onClick={login} className="rounded-2xl text-black bg-secondary hover:bg-[#4563E8] w-16 duration-300" type="submit" >Log in </button>
         </div>
     )
 }
