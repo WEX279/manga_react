@@ -5,5 +5,13 @@
 }
 
 @theme{
+  --color-primaryAlt: #E8CA45
+}
+
+@theme{
   --color-secondary: #97A8F2
+}
+
+@theme{
+  --color-secondaryAlt: #4563E8
 }
