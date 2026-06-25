@@ -6,7 +6,7 @@ import { SignUp } from "../Atoms/LogSign/SignUpBtn";
 import { SwitchTheme } from "../Molecules/ThemeSwitcher";
 import { Outlet } from "react-router-dom";
 
-function Home(){
+function Navbar(){
     return(
         <div className='bg-black text-white'>
             <div className="flex justify-around items-center pb-[1em] pt-[1em]">
@@ -28,5 +28,5 @@ function Home(){
 }
 
 export{
-    Home
+    Navbar
 }

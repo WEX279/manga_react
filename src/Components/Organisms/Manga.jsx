@@ -6,7 +6,7 @@ function Manga() {
 	const [mangas, setMangas] = useState(null)
 	const [isLoading, setIsLoading] = useState(false)
 	const [error, setError] = useState(null)
-	const [page, setPage] = useState(1)
+	const [page] = useState(1)
 
 
 	useEffect(() => {
@@ -28,6 +28,13 @@ function Manga() {
 		load()
 	}, [page])
 
+		if(isLoading){
+			return(
+				<div className="">
+
+				</div>
+			)
+		}
 	return (
 		mangas?.map((manga) => (
 		<div key={manga.id} >
