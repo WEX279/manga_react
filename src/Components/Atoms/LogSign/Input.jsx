@@ -8,13 +8,17 @@ function Input({Focus}){
         inputRef.current.focus()}
     },[Focus]
 )
-    if(Focus==="Here" ){
+    if(Focus==="Email" ){
         return (
-            <input className="border rounded-full max-w"
+            <input className="border rounded-full max-w border-white placeholder-white password p-1 text-white"  placeholder="Email"
             ref={inputRef}/>
-    )}else{
+    )}else if(Focus==="Password"){
         return(
-            <input className="border rounded-full"/>
+            <input className="border rounded-full max-w border-white placeholder-white password p-1 text-white"  placeholder="Password"/>
+        )
+    } else if(Focus==="Confirm password"){
+        return(
+            <input className="border rounded-full max-w border-white placeholder-white password p-1 text-white"  placeholder="Confirm "/>
         )
     }
 }
