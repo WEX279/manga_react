@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
+const API = import.meta.env.VITE_API_URL
+
 
 
 function Manga() {
@@ -14,7 +16,7 @@ function Manga() {
 			try {
 				setIsLoading(true)
 				setError(null)
-				const response = await fetch(`http://localhost:3000/api/manga`)
+				const response = await fetch(`${API}/manga`)
 				if (!response.ok) throw new Error("Couldn`t load mangas!")
 				const data = await response.json()
 				setMangas(data)
