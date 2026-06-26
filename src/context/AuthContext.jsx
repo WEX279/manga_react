@@ -4,7 +4,7 @@ import { createContext, useState } from "react"
 const API = import.meta.env.VITE_API_URL;
 export const AuthContext = createContext(null)
 
-export function AuthProvider({Children: children}) {
+export function AuthProvider({children}) {
     const [user, setUser] = useState(null)
     const [token, setToken] = useState(()=>
         localStorage.getItem("token"))

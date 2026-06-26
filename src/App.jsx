@@ -9,9 +9,10 @@ import { Signup } from './Pages/SignUp';
 import { Login } from './Pages/LogIn';
 import { ThemeContext } from './context/ThemeContext';
 import { RegisterForm } from './Pages/RegisterForm';
+import { LoginForm } from './Pages/LoginForm';
 
 function App() {
-  const [theme, setTheme] = useState('light')
+  const [theme, setTheme] = useState('☀️')
 
   return (
       <ThemeContext.Provider value = {{theme, setTheme}}>
@@ -26,7 +27,8 @@ function App() {
 
           <Route path='/signup' element={<Signup/>}/>
           <Route path='/login' element={<Login/>} />
-          <Route path='/test' element={<RegisterForm/>} />
+          <Route path='/retest' element={<RegisterForm/>} />
+          <Route path='/lotest' element={<LoginForm/>} />
 
         </Routes>
       </ThemeContext.Provider>
