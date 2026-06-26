@@ -1,4 +1,3 @@
-
 import { createContext, useState } from "react"
 
 const API = import.meta.env.VITE_API_URL;
@@ -15,22 +14,25 @@ export function AuthProvider({children}) {
                 headers:{"Content-Type": "application/json"},
                 body: JSON.stringify({ email, password })
                 })
+                console.log(response)
                 if(!response.ok) throw new Error("Wrong mail and password")
 
-                const {token} = await response.json()
-                localStorage.setItem("token", token)
+                const data = await response.json()
+                localStorage.setItem("token", data.token)
 
-                await loadProfile(token)
+                await loadProfile(data.token)
             }
         
             async function loadProfile(token) {
-                const response = await fetch (`${API}/user/login/profile`,{
-                method:"POST",
-                headers:{Authorization: `Bearer ${token}`},
+                if (!token)return;
+                const response = await fetch (`${API}/user/profile`,{
+                    method:"GET",
+                    headers:{Authorization: `Bearer ${token}`},
                 })
+                console.log(response)
                 if (!response.ok) return logout()
-                const { user } = await response.json()
-            setUser(user)
+                const data = await response.json()
+                setUser(data.user)
             }
 
             function logout() {

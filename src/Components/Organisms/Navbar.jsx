@@ -1,8 +1,8 @@
 import { Searcher } from "../Molecules/Searcher";
 import { Layout } from "../Molecules/Layout";
 import { Logo } from "../Atoms/Logo";
-import { LogIn } from "../Atoms/LogSign/LogInBtn";
-import { SignUp } from "../Atoms/LogSign/SignUpBtn";
+import { LogInBtn } from "../Atoms/LogSign/LogInBtn";
+import { SignUpBtn } from "../Atoms/LogSign/SignUpBtn";
 import { SwitchTheme } from "../Molecules/ThemeSwitcher";
 import { Outlet } from "react-router-dom";
 
@@ -15,8 +15,8 @@ function Navbar(){
                 <Searcher />
                 <SwitchTheme/>
                 <div className="flex gap-1 bg-black">
-                    <LogIn/>
-                    <SignUp/>
+                    <LogInBtn/>
+                    <SignUpBtn/>
                 </div>
             </div>
             <hr/>

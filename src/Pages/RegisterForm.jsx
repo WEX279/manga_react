@@ -28,7 +28,7 @@ function RegisterForm() {
     }
 
     async function register(values) {
-        const res= await fetch(`${API}/users/api`)
+        const res= await fetch(`${API}/user/api`)
     }
     
     function handleSubmit(e) {

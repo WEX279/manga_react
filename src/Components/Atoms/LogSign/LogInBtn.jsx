@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom"
 
-function LogIn(){
+function LogInBtn(){
     
     const navigate = useNavigate()
 
@@ -16,5 +16,5 @@ function LogIn(){
 }
 
 export{
-    LogIn
+    LogInBtn
 }
