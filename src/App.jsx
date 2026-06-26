@@ -9,7 +9,6 @@ import { Signup } from './Pages/SignUp';
 import { Login } from './Pages/LogIn';
 import { ThemeContext } from './context/ThemeContext';
 import { RegisterForm } from './Pages/RegisterForm';
-const API = import.meta.env.VITE_API_URL
 
 function App() {
   const [theme, setTheme] = useState('light')

@@ -14,13 +14,13 @@ function Navbar(){
                 <Layout/>
                 <Searcher />
                 <SwitchTheme/>
-                <div className="flex gap-1">
+                <div className="flex gap-1 bg-black">
                     <LogIn/>
                     <SignUp/>
                 </div>
             </div>
             <hr/>
-                <main>
+                <main >
                 <Outlet />
                 </main>
         </div>

@@ -16,7 +16,7 @@ if(LogSign==="SignUp"){
                 <div className="flex justify-center">
                     <Logo/>
                 </div>
-                <h1  className="font-bold text-3xl text-white">SignUp</h1>
+                <h1  className="font-bold text-3xl bg-slate-50 text-black dark:text-white">SignUp</h1>
             </div>
             <div className="flex flex-col justify-center gap-1">
                 <Input Focus={"Email"}/>
@@ -25,7 +25,7 @@ if(LogSign==="SignUp"){
                 <br/>
                 <SendBtn/>
             </div>
-            <p className="text-white">Or log in if you don`t have an account!</p>
+            <p className="bg-slate-50 text-black dark:text-white">Or log in if you don`t have an account!</p>
             <LogIn />
         </div>
     )} else if(LogSign==="LogIn"){
@@ -35,7 +35,7 @@ if(LogSign==="SignUp"){
                 <Logo/>
             </div>
             <div className="flex justify-center">
-                <h1 className="font-bold text-3xl text-white">Log in</h1>
+                <h1 className="font-bold text-3xl bg-slate-50 text-black dark:text-white">Log in</h1>
             </div>
             <div className="flex flex-col justify-center gap-1">
                 <Input Focus={"Email"} />
@@ -43,7 +43,7 @@ if(LogSign==="SignUp"){
                 <br/>
                 <SendBtn/>
             </div>
-            <p className="text-white">Or sign up if you don`t have an account!</p>
+            <p className="text-black dark:text-white">Or sign up if you don`t have an account!</p>
             <SignUp />
         </div>
         )
