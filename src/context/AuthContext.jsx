@@ -1,6 +1,6 @@
 import { createContext, useState } from "react"
-
 const API = import.meta.env.VITE_API_URL;
+
 const AuthContext = createContext(null)
 
 function AuthProvider({children}) {
@@ -8,6 +8,22 @@ function AuthProvider({children}) {
     const [token, setToken] = useState(()=>
         localStorage.getItem("token"))
 
+        async function register(email, password, confirmPassword) {
+            const response = await fetch (`${API}/user/register`,{
+                method:"POST",
+                headers:{"Content-Type": "application/json"},
+                body: JSON.stringify({ email, password, confirmPassword })
+                })
+
+                if(!response.ok) throw new Error("Check credentials!")
+
+                const data = await response.json()
+                localStorage.setItem("token", data.token)
+
+                await loadProfile(data.token)
+            }
+            
+        
         async function login(email, password) {
             const response = await fetch (`${API}/user/login`,{
                 method:"POST",
@@ -41,7 +57,7 @@ function AuthProvider({children}) {
                 setUser(null)
             }
 
-            const value = { user, token, login, logout, loadProfile }
+            const value = { user, token, register, login, logout, loadProfile }
 
             return (
             <AuthContext.Provider value={value}>

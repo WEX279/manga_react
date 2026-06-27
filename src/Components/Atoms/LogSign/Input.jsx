@@ -4,7 +4,7 @@ function Input({Focus, value, onChange, type, name }){
     const inputRef = useRef(null)
 
     useEffect(()=>{Focus
-        if(Focus==="Email" || Focus==="Name"){
+        if(Focus==="Email"){
         inputRef.current.focus()}
     },[Focus]
 )
@@ -32,7 +32,11 @@ function Input({Focus, value, onChange, type, name }){
     } else if(Focus==="Confirm password"){
         return(
             <input className="border rounded-full max-w  border-black dark:border-white dark:placeholder-white p-1 dark:text-white"
-            placeholder="Confirm "/>
+            name={name}
+            type={type}
+            value={value}
+            onChange={onChange}
+            placeholder="Confirm password"/>
         )
     }
 }
