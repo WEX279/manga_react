@@ -1,9 +1,9 @@
 import { createContext, useState } from "react"
 
 const API = import.meta.env.VITE_API_URL;
-export const AuthContext = createContext(null)
+const AuthContext = createContext(null)
 
-export function AuthProvider({children}) {
+function AuthProvider({children}) {
     const [user, setUser] = useState(null)
     const [token, setToken] = useState(()=>
         localStorage.getItem("token"))
@@ -14,8 +14,8 @@ export function AuthProvider({children}) {
                 headers:{"Content-Type": "application/json"},
                 body: JSON.stringify({ email, password })
                 })
-                console.log(response)
-                if(!response.ok) throw new Error("Wrong mail and password")
+
+                if(!response.ok) throw new Error("Wrong mail or password")
 
                 const data = await response.json()
                 localStorage.setItem("token", data.token)
@@ -29,7 +29,7 @@ export function AuthProvider({children}) {
                     method:"GET",
                     headers:{Authorization: `Bearer ${token}`},
                 })
-                console.log(response)
+                
                 if (!response.ok) return logout()
                 const data = await response.json()
                 setUser(data.user)
@@ -50,3 +50,7 @@ export function AuthProvider({children}) {
             )
         }
 
+export{
+    AuthProvider,
+    AuthContext
+}

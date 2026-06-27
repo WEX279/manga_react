@@ -1,9 +1,9 @@
 import { useRef, useEffect } from "react"
 
-function Input({Focus, ...props }){
+function Input({Focus, value, onChange, type, name }){
     const inputRef = useRef(null)
 
-    useEffect(()=>{
+    useEffect(()=>{Focus
         if(Focus==="Email" || Focus==="Name"){
         inputRef.current.focus()}
     },[Focus]
@@ -12,13 +12,20 @@ function Input({Focus, ...props }){
         return (
             <input 
             className="border rounded-full max-w border-black dark:border-white dark:placeholder-white p-1 dark:text-white"
+            name={name}
+            type={type}
+            value={value}
+            onChange={onChange}
             placeholder="Email"
-            ref={inputRef}
-            {...props}/>
+            ref={inputRef}/>
     )}else if(Focus==="Password"){
         return(
             <input
             className="border rounded-full max-w border-black dark:border-white dark:placeholder-white p-1 dark:text-white"
+            name={name}
+            type={type}
+            value={value}
+            onChange={onChange}
             placeholder="Password"
             />
         )

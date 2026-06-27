@@ -9,14 +9,15 @@ import { Logo } from "../Logo"
 
 function Form({ LogSign }) {
     const { login } = useAuth();
-	const [data, setData] = useState({ email: "", password: "" });
-	const [error, setError] = useState(null);
-	const [isLoading, setIsLoading] = useState(false);
+	const [ data, setData ] = useState({ email: "", password: "" });
+	const [ error, setError ] = useState(null);
+	const [ isLoading, setIsLoading] = useState(false);
 	const navigate = useNavigate()
 
 	async function handleSubmit(e) {
 		e.preventDefault();
 		setError(null);
+        console.log(e)
 		setIsLoading(true);
 		try {
 			await login(data.email, data.password);
@@ -36,9 +37,13 @@ function Form({ LogSign }) {
                 <h1  className="font-bold text-3xl bg-slate-50 text-black dark:text-white">SignUp</h1>
             </div>
             <div className="flex flex-col justify-center gap-1">
-                <Input Focus={"Email"}/>
-                <Input Focus={"Password"}/>
-                <Input Focus={"Confirm password"}/>
+                <Input
+                Focus={"Email"}
+                />
+                <Input
+                Focus={"Password"}/>
+                <Input
+                Focus={"Confirm password"}/>
                 <br/>
                 <SendBtn/>
             </div>
@@ -59,18 +64,18 @@ function Form({ LogSign }) {
                     <form onSubmit={handleSubmit} className="flex flex-col justify-center gap-1">
                         
                         <Input
-                            name="email"
-                            type="email"
                             Focus={"Email"}
                             value={data.email}
+                            name="email"
+                            type="email"
                             onChange={(e) => setData({ ...data, email: e.target.value })
                             }/>
                         <Input
+                            Focus={"Password"}
+                            value={data.password}
                             name="password"
                             type="password"
-                            Focus={"Password"}
                             onSubmit={handleSubmit}
-                            value={data.password}
                             onChange={(e) => setData({ ...data, password: e.target.value })
                             }/>
                         {error && <p className="text-red-600">{error}</p>}
