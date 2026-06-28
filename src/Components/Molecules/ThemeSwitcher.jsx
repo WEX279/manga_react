@@ -9,17 +9,23 @@ function SwitchTheme(){
     const root = window.document.documentElement
 
     useEffect(()=>{
-        if(theme === <img src={sunIcon}/>){
+        if(theme === "dark"){
             root.classList.add("dark")
         }else{
             root.classList.remove("dark")
         }
     },[theme])
 
+    function toggleTheme() {
+        setTheme(theme === "light" ? "dark" : "light")
+    }
+
     return(
-        <button className="fixed bottom-[2em] right-[2em] w-[2em]" onClick={() => setTheme(theme === <img src={sunIcon}/> ? < img src={moonIcon}/>: <img src={sunIcon}/>)}>
-            {theme}
+        <div >
+        <button className="fixed bottom-[2em] right-[2em] w-[3em] bg-primary rounded-3xl p-1 hover:bg-primaryAlt duration-300" onClick={toggleTheme}>
+            <img src={theme==="light" ? sunIcon : moonIcon}/>
         </button>
+        </div>
     )
 }
 
