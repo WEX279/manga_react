@@ -6,7 +6,7 @@ import { LordImOne } from "../../../Assets/LordImOne"
 function Carrousel() {
 
     return(
-        <div className="flex justify-center">
+        <div className="flex justify-center bg-white dark:bg-black">
             <Chiikawa_sky/>
             <ReiCybercore/>
             <BookShelf/>

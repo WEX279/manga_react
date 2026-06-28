@@ -1,7 +1,7 @@
 import './App.css'
 import { useState } from 'react';
 import { Routes, Route,  } from 'react-router-dom'
-import { Navbar } from './Components/Organisms/Navbar';
+import { BasicStructure } from './Components/Templates/BasicStructure';
 import { Home } from './Pages/Home';
 import { Catalog } from './Pages/Catalog';
 import { MangaCard } from './Pages/MangaCard';
@@ -12,15 +12,17 @@ import { LoginForm } from './Pages/LoginForm';
 import { PrivateRoute } from './Components/PrivateRoute';
 import { About } from './Pages/About';
 import { Profile } from './Pages/Profile';
+import sunIcon from "../Assets/sun-svgrepo-com.svg"
 
 function App() {
-  const [theme, setTheme] = useState('☀️')
+  const [theme, setTheme] = useState(<img src={sunIcon} />)
 
   return (
       <ThemeContext.Provider value = {{theme, setTheme}}>
-        <Routes>
+        <div className='{theme}' >
+        <Routes >
 
-            <Route path='/' element={<Navbar/>}>
+            <Route path='/' element={<BasicStructure/>}>
               <Route path='/home' element={<Home/>}/>
               <Route path='/manga' element={<Catalog/>}/>
               <Route element={<PrivateRoute/>}>
@@ -36,6 +38,7 @@ function App() {
           <Route path='/retest' element={<RegisterForm/>} />
 
         </Routes>
+        </div>
       </ThemeContext.Provider>
   )
 }
