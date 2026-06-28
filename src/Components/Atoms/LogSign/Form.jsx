@@ -6,6 +6,7 @@ import { LogInBtn } from "./LogInBtn"
 import { SendBtn } from "../SendBtn"
 import { Input } from "./Input"
 import { Logo } from "../Logo"
+import { Loading } from "../Loading";
 
 function Form({ LogSign }) {
     const { register, login } = useAuth();
@@ -29,6 +30,13 @@ function Form({ LogSign }) {
 		} finally {
 			setIsLoading(false);
 		}}
+
+    if(isLoading){
+        return(
+            <Loading/>
+        )
+    }
+
     return(
         <div className="mx-auto flex justify-center max-w-md flex-col gap-1 p-6">
                 <div className="flex flex-col self-center justify-center gap-[1em] ">
@@ -36,7 +44,7 @@ function Form({ LogSign }) {
                         <Logo />
                     </div>
                     <div className="flex justify-center">
-                        <h1 className="font-bold text-3xl bg-slate-50 text-black dark:text-white dark:bg-black">Sign Up</h1>
+                        <h1 className="font-bold text-3xl bg-slate-50 text-black dark:text-white dark:bg-inherit">Sign Up</h1>
                     </div>
             <form onSubmit={handleSubmit} className="flex flex-col justify-center gap-1">
                 <Input
@@ -62,7 +70,7 @@ function Form({ LogSign }) {
                     {error && <p className="text-red-600">{error}</p>}
                 <SendBtn/>
             </form>
-            <p className="bg-slate-50 text-black dark:text-white dark:bg-black">Or log in if you don`t have an account!</p>
+            <p className="bg-slate-50 text-black dark:text-white dark:bg-inherit">Or log in if you don`t have an account!</p>
             <LogInBtn />
         </div>
         </div>
@@ -88,7 +96,7 @@ function Form({ LogSign }) {
                         <Logo/>
                     </div>
                     <div className="flex justify-center">
-                        <h1 className="font-bold text-3xl bg-slate-50 text-black dark:text-white dark:bg-black">Log in</h1>
+                        <h1 className="font-bold text-3xl bg-slate-50 text-black dark:text-white dark:bg-inherit">Log in</h1>
                     </div>
                     <form onSubmit={handleSubmit} className="flex flex-col justify-center gap-1">
                         

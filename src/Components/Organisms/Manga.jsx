@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
+import { Loading } from "../Atoms/Loading";
 const API = import.meta.env.VITE_API_URL;
 
 
@@ -20,6 +21,7 @@ function Manga() {
 				if (!response.ok) throw new Error("Couldn`t load mangas!")
 				const data = await response.json()
 				setMangas(data)
+				
 			} catch (error) {
 				setError(error.message)
 			} finally {
@@ -30,6 +32,14 @@ function Manga() {
 		load()
 	}, [page])
 	
+	if(isLoading)return(<Loading/>)
+	if(error)return(
+	<p>
+		Error fetching mangas
+	</p>
+		)
+		
+
 	return (
 		mangas?.map((manga) => (
 		<div key={manga.id} >

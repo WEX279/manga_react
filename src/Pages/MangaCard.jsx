@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { Loading } from "../Components/Atoms/Loading";
 
 function MangaCard(){
     const {_id} = useParams()
@@ -23,7 +24,7 @@ function MangaCard(){
         manga()
     },[_id])
 
-    if(isLoading)return<p>Loading...</p>
+    if(isLoading)return(<Loading/>)
     if(error)return<p>Something happened fetching your mangas</p>
 
     return(
