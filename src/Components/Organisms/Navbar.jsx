@@ -6,11 +6,11 @@ import { SignUpBtn } from "../Atoms/LogSign/SignUpBtn";
 
 function Navbar(){
     return(
-        <div className="flex justify-around items-center pb-[1em] pt-[1em]">
+        <div className="flex justify-around items-center pb-[1em] pt-[1em] sticky top-0 bg-slate-900 text-white border-b dark:border-white">
                 <Logo/>
                 <Layout/>
                 <Searcher />
-                <div className="flex gap-1 bg-black">
+                <div className="flex gap-1 ">
                     <LogInBtn/>
                     <SignUpBtn/>
                 </div>

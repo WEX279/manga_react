@@ -4,12 +4,11 @@ import { SwitchTheme } from '../Molecules/ThemeSwitcher'
 
 function BasicStructure(){
     return(
-        <div className='bg-black text-white'>
+        <div>
            <Navbar/> 
            <SwitchTheme/>
-            <hr/>
-                <main >
-                <Outlet />
+                <main  >
+                    <Outlet />
                 </main>
         </div>
     )

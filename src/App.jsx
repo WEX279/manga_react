@@ -13,7 +13,7 @@ import { About } from './Pages/About';
 import { Profile } from './Pages/Profile';
 
 function App() {
-  const [theme, setTheme] = useState("light")
+  const [theme, setTheme] = useState("dark")
 
   return (
       <ThemeContext.Provider value = {{theme, setTheme}}>

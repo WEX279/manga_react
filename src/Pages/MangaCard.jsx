@@ -28,9 +28,9 @@ function MangaCard(){
     if(error)return<p>Something happened fetching your mangas</p>
 
     return(
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center p-[2em] dark:bg-slate-900 dark:text-white min-h-[calc(100vh-69px)]">
             <img src={manga?.image} alt={manga?.name} />
-            <div className="flex flex-col justify-center p-[2em] gap-[1em]">
+            <div className="flex flex-col justify-center p-[2em] gap-[1em] ">
                 <h2 className="font-bold text-3xl">{manga?.name}</h2>
                 <p ><strong>Author: </strong> {manga?.author}</p>
                 <p ><strong>First published: </strong>{manga?.release}</p>
