@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Routes, Route,  } from 'react-router-dom'
 import { BasicStructure } from './Components/Templates/BasicStructure';
 import { Home } from './Pages/Home';
-import { Catalog } from './Pages/Catalog';
+import { Catalog } from './Pages/CatalogOld';
 import { MangaCard } from './Pages/MangaCard';
 import { ThemeContext } from './context/ThemeContext';
 import { SignUpForm } from './Pages/SignUpForm';
