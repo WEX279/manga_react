@@ -1,7 +1,7 @@
 import { Logo } from "./Logo"
 function Banner(){
     return(
-        <div className=" dark:bg-slate-900 min-h-[calc(100vh-69px)]">
+        <div className=" bg-Dark light:bg-Light min-h-[calc(100vh-69px)]">
 
         <div className="p-[2em] max-h-fit">
 
