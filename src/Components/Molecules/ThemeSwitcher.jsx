@@ -5,6 +5,7 @@ import moonIcon from "../../../Assets/moon-svgrepo-com.svg"
 
 function SwitchTheme(){
     const {theme, setTheme} = useContext(ThemeContext)
+    
 
     useEffect(()=>{
         const root = window.document.documentElement
