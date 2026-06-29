@@ -1,11 +1,11 @@
-import { Carrousel } from "../Components/Organisms/Carrousel"
+import { Banner } from "../Components/Atoms/Banner"
 
 
 function Home(){
 
     return(
-        <div>
-            <Carrousel/>
+        <div >
+            <Banner />
         </div>
     )
 }

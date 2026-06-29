@@ -24,5 +24,14 @@
   --color-thirdaryAlt: #6AF0B0
 }
 
-@custom-variant dark (&:where(.dark, .dark *))
+
+@theme{
+  --color-Dark: #0F172A
+}
+
+@theme{
+  --color-Light: #F8FAFC
+}
+
+@custom-variant light (&:where(.light, .light *))
 

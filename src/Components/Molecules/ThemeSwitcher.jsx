@@ -6,24 +6,24 @@ import moonIcon from "../../../Assets/moon-svgrepo-com.svg"
 function SwitchTheme(){
     const {theme, setTheme} = useContext(ThemeContext)
 
-    const root = window.document.documentElement
-
     useEffect(()=>{
-        if(theme === "dark"){
-            root.classList.add("dark")
+        const root = window.document.documentElement
+        if(theme === "light"){
+            root.classList.add("light")
         }else{
-            root.classList.remove("dark")
+            root.classList.remove("light")
         }
+        localStorage.setItem("theme", theme)
     },[theme])
 
     function toggleTheme() {
-        setTheme(theme === "light" ? "dark" : "light")
-    }
+        setTheme(theme === "dark" ? "light" : "dark")
+        }
 
     return(
         <div >
         <button className="fixed bottom-[2em] right-[2em] w-[3em] bg-primary rounded-3xl p-1 hover:bg-primaryAlt duration-300" onClick={toggleTheme}>
-            <img src={theme==="light" ? sunIcon : moonIcon}/>
+            <img src={theme==="dark" ? moonIcon : sunIcon}/>
         </button>
         </div>
     )

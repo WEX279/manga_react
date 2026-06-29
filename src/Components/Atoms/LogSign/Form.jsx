@@ -44,7 +44,7 @@ function Form({ LogSign }) {
                         <Logo />
                     </div>
                     <div className="flex justify-center">
-                        <h1 className="font-bold text-3xl bg-slate-50 text-black dark:text-white dark:bg-inherit">Sign Up</h1>
+                        <h1 className="font-bold text-3xl bg-Dark text-Light light:text-Dark light:bg-inherit">Sign Up</h1>
                     </div>
             <form onSubmit={handleSubmit} className="flex flex-col justify-center gap-1">
                 <Input
@@ -70,7 +70,7 @@ function Form({ LogSign }) {
                     {error && <p className="text-red-600">{error}</p>}
                 <SendBtn/>
             </form>
-            <p className="bg-slate-50 text-black dark:text-white dark:bg-inherit">Or log in if you don`t have an account!</p>
+            <p className=" text-Light light:text-Dark dark:bg-inherit">Or log in if you don`t have an account!</p>
             <LogInBtn />
         </div>
         </div>
@@ -82,7 +82,7 @@ function Form({ LogSign }) {
 		setIsLoading(true);
 		try {
 			await login(data.email, data.password);
-			navigate("/profile")		
+			navigate("/home")		
 		} catch (err) {
 			setError(err.message);
 		} finally {
@@ -96,7 +96,7 @@ function Form({ LogSign }) {
                         <Logo/>
                     </div>
                     <div className="flex justify-center">
-                        <h1 className="font-bold text-3xl bg-slate-50 text-black dark:text-white dark:bg-inherit">Log in</h1>
+                        <h1 className="font-bold text-3xl bg-Dark text-Light light:text-Dark light:bg-Light">Log in</h1>
                     </div>
                     <form onSubmit={handleSubmit} className="flex flex-col justify-center gap-1">
                         
@@ -118,7 +118,7 @@ function Form({ LogSign }) {
                         {error && <p className="text-red-600">{error}</p>}
                         <SendBtn/>
                     </form>
-                    <p className="text-black dark:text-white">Or sign up if you don`t have an account!</p>
+                    <p className="text-Light light:text-Dark">Or sign up if you don`t have an account!</p>
                     <SignUpBtn />
                 </div>
         </div>
