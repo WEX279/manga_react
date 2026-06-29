@@ -1,19 +1,27 @@
 @import "tailwindcss";
 
 @theme{
-  --color-primary: #F2E197
+  --color-primary: #EC4441
 }
 
 @theme{
-  --color-primaryAlt: #E8CA45
+  --color-primaryAlt: #F06D6A
 }
 
 @theme{
-  --color-secondary: #97A8F2
+  --color-secondary: #4194EC
 }
 
 @theme{
-  --color-secondaryAlt: #4563E8
+  --color-secondaryAlt: #6AABF0
+}
+
+@theme{
+  --color-thirdary: #41EC99
+}
+
+@theme{
+  --color-thirdaryAlt: #6AF0B0
 }
 
 @custom-variant dark (&:where(.dark, .dark *))
