@@ -1,16 +1,10 @@
-import { useNavigate } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 function LogInBtn(){
     
-    const navigate = useNavigate()
-
-    const login = ()=>{
-        navigate('/login')
-    }
-    
     return(
         <div className="flex justify-center">
-        <button onClick={login} className="rounded-2xl text-black bg-secondary hover:bg-secondaryAlt w-16 duration-300" type="submit" >Log in </button>
+        <NavLink to="/login" className="flex justify-center font-bold rounded-2xl text-black bg-secondary hover:bg-secondaryAlt w-16 duration-300 light:text-Light light:bg-Dark light:hover:bg-secondary">Log in </NavLink>
         </div>
     )
 }
