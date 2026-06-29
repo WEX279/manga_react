@@ -1,37 +1,16 @@
 @import "tailwindcss";
 
 @theme{
-  --color-primary: #EC4441
+  --color-primary: #EC4441;
+  --color-primaryAlt: #F06D6A;
+  --color-secondary: #4194EC;
+  --color-secondaryAlt: #6AABF0;
+  --color-thirdary: #41EC99;
+  --color-thirdaryAlt: #6AF0B0;
+  --color-Dark: #0F172A;
+  --color-Light: #F8FAFC;
 }
 
-@theme{
-  --color-primaryAlt: #F06D6A
-}
-
-@theme{
-  --color-secondary: #4194EC
-}
-
-@theme{
-  --color-secondaryAlt: #6AABF0
-}
-
-@theme{
-  --color-thirdary: #41EC99
-}
-
-@theme{
-  --color-thirdaryAlt: #6AF0B0
-}
-
-
-@theme{
-  --color-Dark: #0F172A
-}
-
-@theme{
-  --color-Light: #F8FAFC
-}
 
 @custom-variant light (&:where(.light, .light *))
 
