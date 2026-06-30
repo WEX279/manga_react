@@ -42,7 +42,7 @@ function Manga() {
 
 	return (
 		mangas?.map((manga) => (
-		<div key={manga.id} >
+		<div key={manga._id} >
 			<section className="flex flex-col  w-40 ">
 				<Link to={`http://localhost:5173/manga/${manga._id}`} className="flex justify-center w-40"><img src={manga?.image} alt={manga?.name} className="flex justify-center w-40 h-60"/></Link>           
             <h2 className="flex justify-center w-40 bg-Dark text-Light light:bg-Light light:text-Dark">{manga?.name}</h2>

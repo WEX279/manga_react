@@ -2,12 +2,17 @@ import { BookShelf } from "../../../Assets/BookShelf"
 import { Kojima } from "../../../Assets/Kojima"
 import { TextPlaceholder } from "./TextPlaceholder"
 
+// function refresh() {
+//     window.location.reload()
+// }
+
 function Banner(){
+
     return(
         <div className=" bg-Dark light:bg-Light">
             <div className="flex justify-center flex-col ">
                     <section className="flex flex-col ">
-                        <img src={BookShelf} className="rounded-4xl w-[90vw] light:border-Dark opacity-70 self-center "/>
+                        <img src={BookShelf} className="rounded-4xl w-[80vw] light:border-Dark opacity-70 self-center "/>
 
                         <div className=" flex  p-[2em] text-fourth light:text-fourthAl justify-center">
                             <h1 className="flex font-bold text-[4em]">Descubre tu nuevo manga favorito, aquí.</h1>
