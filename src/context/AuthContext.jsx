@@ -19,6 +19,7 @@ function AuthProvider({children}) {
 
                 const data = await response.json()
                 localStorage.setItem("token", data.token)
+                setToken(data.token)
 
                 await loadProfile(data.token)
             }
@@ -35,6 +36,7 @@ function AuthProvider({children}) {
 
                 const data = await response.json()
                 localStorage.setItem("token", data.token)
+                setToken(data.token)
 
                 await loadProfile(data.token)
             }
