@@ -22,11 +22,11 @@ function App() {
               <Route path='/' element={<BasicStructure/>}>
                 <Route path='/home' element={<Home/>}/>
                 <Route path='/manga' element={<Catalog/>}/>
+                <Route path='/about' element={<About/>}/>
 
                 <Route element={<PrivateRoute/>}>
                   <Route path='/manga/:_id' element={<MangaCard/>}/>
-                  <Route path='/about' element={<About/>}/>
-                  <Route path='/account' element={<Profile/>}/>
+                  <Route path='/profile' element={<Profile/>}/>
 
                 </Route>
               </Route>  
