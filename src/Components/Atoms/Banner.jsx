@@ -1,5 +1,6 @@
 import { BookShelf } from "../../../Assets/BookShelf"
 import { Kojima } from "../../../Assets/Kojima"
+import { TextPlaceholder } from "./TextPlaceholder"
 
 function Banner(){
     return(
@@ -16,81 +17,7 @@ function Banner(){
                         <section className="text-Light light:text-Dark p-[3em] flex ">
                             <div className="flex flex-col max-w-[50vw]">
                                 <h2 className="text-fourth font-bold text-[2em] light:text-fourthAlt">Chatgpt es subnormal</h2>
-                                <p>miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                    miau miau miau miau miau miau miau miau miau miau
-                                </p>
+                                <TextPlaceholder/>
                             </div>
 
                             <div className="flex justify-center self-start p-[3em]">
