@@ -1,5 +1,5 @@
-import { BookShelf } from "../../../Assets/BookShelf"
-import { Kojima } from "../../../Assets/Kojima"
+import { BookShelf } from "../Atoms/Pics/BookShelf"
+import { Kojima } from "../Atoms/Pics/Kojima"
 import { TextPlaceholder } from "./TextPlaceholder"
 
 // function refresh() {

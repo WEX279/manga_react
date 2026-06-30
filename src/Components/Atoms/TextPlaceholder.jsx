@@ -1,6 +1,6 @@
 function TextPlaceholder(){
     return(
-        <div>
+        <div className="p-[3em] bg-red-500">
             <p>miau miau miau miau miau miau miau miau miau miau
                                     miau miau miau miau miau miau miau miau miau miau
                                     miau miau miau miau miau miau miau miau miau miau

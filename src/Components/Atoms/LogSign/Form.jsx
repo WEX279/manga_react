@@ -82,7 +82,7 @@ function Form({ LogSign }) {
 		setIsLoading(true);
 		try {
 			await login(data.email, data.password);
-			navigate("/home")		
+			navigate("/profile")		
 		} catch (err) {
 			setError(err.message);
 		} finally {
