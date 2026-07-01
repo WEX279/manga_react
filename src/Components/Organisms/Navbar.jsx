@@ -1,19 +1,13 @@
-import { Searcher } from "../Molecules/Searcher";
 import { Layout } from "../Molecules/Layout";
 import { Logo } from "../Atoms/Logo";
-import { LogInBtn } from "../Atoms/LogSign/LogInBtn";
-import { SignUpBtn } from "../Atoms/LogSign/SignUpBtn";
+import { UserBtn } from "../Molecules/UserBtn";
 
 function Navbar(){
     return(
-        <div className="flex justify-around items-center pb-[1em] pt-[1em] sticky top-0 bg-slate-900 text-white light:bg-Light light:text-Dark z-50">
+        <div className="flex justify-around items-center p-[1em] sticky top-0 bg-slate-900 text-white light:bg-Light light:text-Dark z-50">
                 <Logo/>
                 <Layout/>
-                <Searcher />
-                <div className="flex gap-1 ">
-                    <LogInBtn/>
-                    <SignUpBtn/>
-                </div>
+                <UserBtn/>
         </div>
     )
 }
