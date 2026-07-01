@@ -1,14 +1,10 @@
 import { BookShelf } from "../Atoms/Pics/BookShelf"
-// import { Kojima } from "../Atoms/Pics/Kojima"
 import { TextPlaceholder } from "./TextPlaceholder"
-
-// function refresh() {
-//     window.location.reload()
-// }
 
 function Banner(){
 
     const Kojima ="https://preview.redd.it/in-all-seriousness-lets-all-imagine-a-bloodborne-2-with-v0-o2i706pxlchc1.png?auto=webp&s=c7324210324301aeef74ccc49d760b88594dcb1c"
+    
     return(
         <div className=" bg-Dark light:bg-Light">
             <div className="flex justify-center flex-col ">
