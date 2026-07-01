@@ -17,7 +17,7 @@ function Banner(){
                     </section>
                     <section className="text-Light light:text-Dark p-[3em] flex ">
                         <div className="flex flex-col max-w-[50vw]">
-                            <h2 className="text-fourth font-bold text-[2em] light:text-fourthAlt">Chatgpt es subnormal</h2>
+                            <h2 className="text-fourth font-bold text-[2em] light:text-fourthAlt">El placer de leer</h2>
                             <TextPlaceholder/>
                         </div>
 
