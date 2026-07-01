@@ -19,7 +19,7 @@ function App() {
         <div className='{theme}' >
         <Routes >
             
-              <Route element={<BasicStructure/>}>
+              <Route path='/' element={<BasicStructure/>}>
                 <Route path='/home' element={<Home/>}/>
                 <Route path='/manga' element={<Catalog/>}/>
                 <Route path='/about' element={<About/>}/>
