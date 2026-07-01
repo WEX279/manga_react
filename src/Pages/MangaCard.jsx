@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Loading } from "../Components/Atoms/Loading";
+const API = import.meta.env.VITE_API_URL;
 
 function MangaCard(){
     const {_id} = useParams()
@@ -12,7 +13,7 @@ function MangaCard(){
         async function manga() {
             try {
             setIsLoading(true)
-            const response = await fetch (`http://localhost:3000/api/manga/${_id}`)
+            const response = await fetch (`${API}/manga/${_id}`)
             if(!response.ok) throw new Error( "Error fetching mangas")
             setManga(await response.json())
             } catch (error) { 
@@ -24,8 +25,14 @@ function MangaCard(){
         manga()
     },[_id])
 
-    if(isLoading)return(<Loading/>)
-    if(error)return<p>Something happened fetching your mangas</p>
+    if(isLoading)return(
+    <div className="h-[calc(100vh-69px)] bg-Dark light:bg-Light">
+        <Loading/>
+    </div>)
+    if(error)return(
+    <div className="h-[calc(100vh-69px)] bg-Dark light:bg-Light text-Light light:text-Dark flex justify-center p-[2em]">
+        <p>Something happened fetching your mangas</p>
+    </div>)
 
     return(
         <div className="flex items-center justify-center p-[2em] bg-Dark text-Light light:bg-Light light:text-Dark min-h-[calc(100vh-69px)]">
