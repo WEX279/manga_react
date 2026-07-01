@@ -5,12 +5,14 @@ function LoadAccount(){
     const { user } = useAuth()
     
     return(
-        <p className="bg-amber-200">
-            {user?.email}
-        </p>
+        <div>
+            
+        </div>
     )
 
 }
+
+
 
 export{
     LoadAccount
