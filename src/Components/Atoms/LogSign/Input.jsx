@@ -11,7 +11,7 @@ function Input({Focus, value, onChange, type, name }){
     if(Focus==="Email" ){
         return (
             <input 
-            className="border rounded-full max-w border-Light placeholder-Light light:border-Dark light:placeholder-Dark p-1 light:text-Dark"
+            className="border rounded-full p-1 border-Light placeholder-Light light:border-Dark light:placeholder-Dark light:text-Dark text-Light"
             name={name}
             type={type}
             value={value}
@@ -21,7 +21,7 @@ function Input({Focus, value, onChange, type, name }){
     )}else if(Focus==="Password"){
         return(
             <input
-            className="border rounded-full max-w border-Light placeholder-Light light:border-Dark light:placeholder-Dark p-1 light:text-Dark"
+            className="border rounded-full p-1 border-Light placeholder-Light light:border-Dark light:placeholder-Dark  light:text-Dark text-Light"
             name={name}
             type={type}
             value={value}
@@ -31,7 +31,7 @@ function Input({Focus, value, onChange, type, name }){
         )
     } else if(Focus==="Confirm password"){
         return(
-            <input className="border rounded-full max-w  border-Light placeholder-Light light:border-Dark light:placeholder-Dark p-1 light:text-Dark"
+            <input className="border rounded-full p-1 border-Light placeholder-Light light:border-Dark light:placeholder-Dark light:text-Dark text-Light"
             name={name}
             type={type}
             value={value}
