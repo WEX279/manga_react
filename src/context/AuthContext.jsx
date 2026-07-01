@@ -50,7 +50,8 @@ function AuthProvider({children}) {
                 
                 if (!response.ok) return logout()
                 const data = await response.json()
-                setUser(data.user)
+                console.log(data)
+                setUser(data.User)
             }
 
             function logout() {

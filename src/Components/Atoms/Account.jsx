@@ -1,16 +1,14 @@
-import { useAuth } from "../../Hooks/useAuth";
-// import { useEffect, useState } from "react";
+import { useContext } from "react";
+import { AuthContext } from "../../context/AuthContext";
 
 function LoadAccount(){
-    const { user } = useAuth()
-    
-    return(
+    const { User } = useContext(AuthContext)
+    console.log({User})
+        return(
         <div>
-            
+            <p>{User?.email}</p>
         </div>
-    )
-
-}
+    )}
 
 
 

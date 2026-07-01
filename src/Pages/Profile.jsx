@@ -2,7 +2,8 @@ import cuenta from "../../Assets/cuenta.png"
 import { LoadAccount } from "../Components/Atoms/Account"
 
 function Profile() {
-
+    
+    
     return(
         <div className="bg-Dark light:bg-Light text-Light light:text-Dark h-screen">
             <div className="flex">
