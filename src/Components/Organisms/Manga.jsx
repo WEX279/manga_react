@@ -33,12 +33,14 @@ function Manga() {
 		load()
 	}, [page])
 	
-	if(isLoading)return(<Loading/>)
-	if(error)return(
-	<p>
-		Error fetching mangas
-	</p>
-		)
+	if(isLoading)return(
+    <div className="h-[calc(100vh-69px)] bg-Dark light:bg-Light">
+        <Loading/>
+    </div>)
+    if(error)return(
+    <div className="h-[calc(100vh-69px)] bg-Dark light:bg-Light text-Light light:text-Dark flex justify-center p-[2em]">
+        <p>Something happened fetching your mangas</p>
+    </div>)
 		
 
 	return (
