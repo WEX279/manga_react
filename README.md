@@ -1,4 +1,4 @@
-﻿# Proyecto de conexión FrontEnd con Backend para página web de manga
+# MangaSync
 
 Este es un proyecto llevado a cabo con el fin de practicar el desarrollo de Frontend con react así cómo lidiar con peticiones de usuarios conectando con nuestro propio backend
 
