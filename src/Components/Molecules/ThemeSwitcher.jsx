@@ -18,7 +18,7 @@ function SwitchTheme(){
     },[theme])
 
     function toggleTheme() {
-        setTheme(theme === "dark" ? "light" : "dark")
+        setTheme(theme === "light" || theme === "null" ? "dark" : "light")
         }
 
     return(
