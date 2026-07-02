@@ -13,7 +13,7 @@ import { About } from './Pages/About';
 import { Profile } from './Pages/Profile';
 
 function App() {
-  const [theme, setTheme] =  useState(localStorage.getItem("theme"))
+  const [theme, setTheme] =  useState(localStorage.getItem("theme") || "dark")
   return (
       <ThemeContext.Provider value = {{theme, setTheme}}>
         <div className='{theme}' >

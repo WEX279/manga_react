@@ -18,14 +18,14 @@ function SwitchTheme(){
     },[theme])
 
     function toggleTheme() {
-        setTheme(theme === "light" || theme === "null" ? "dark" : "light")
+        setTheme(theme === "light" ? "dark" : "light")
         }
 
     return(
         <div >
         <button className="fixed bottom-[2em] right-[2em] w-[3em] bg-primary rounded-3xl p-1 hover:bg-primaryAlt duration-300 z-50" onClick={toggleTheme}>
             <img src={
-                theme === "dark" || theme === null ? moonIcon : sunIcon}/>
+                theme === "dark" ? moonIcon : sunIcon}/>
         </button>
         </div>
     )
